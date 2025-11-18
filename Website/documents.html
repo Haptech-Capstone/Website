@@ -9,14 +9,14 @@
     
     html, body 
     {
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       padding: 0;
     }
 
     body 
     {
-      height: 100%;
+      /* allow body to grow beyond the viewport so the background gradient covers all content */
       font-family: 'Tomorrow', sans-serif;
       background: linear-gradient(to bottom, #1e1e1e, #2a2a2a);
       color: white;
@@ -28,6 +28,17 @@
     h1 
     {
       font-size: 32px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-top: 50px;
+    }
+
+    h2 
+    {
+      font-size: 20px;
       color: white;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -48,7 +59,7 @@
       font-size: 20px;
       font-weight: bold;
       border-radius: 10px;
-      color: #333;
+      color: white;
     }
 
     .documents-container 
@@ -157,30 +168,75 @@
   <h1>Team Documents</h1>
 
   <div class="box">
+    <h2>Documents</h2>
     <div class="documents-container">
       <a href="documents/team_standards.pdf" class="doc-item">
           <img src="images/teamstandards.png" alt="Team Standards" />
           <span>Team Standards</span>
       </a>
       <a href="documents/team_inventory.pdf" class="doc-item">
-          <img src="images/management.png" alt="Team Inventory" />
+          <img src="images/teaminventory.png" alt="Team Inventory" />
           <span>Team Inventory</span>
-      </a>
-      <a href="documents/presentations.pdf" class="doc-item">
-          <img src="images/presentation.png" alt="Presentations" />
-          <span>Presentations</span>
       </a>
       <a href="documents/tech_feasibility.pdf" class="doc-item">
           <img src="images/study.png" alt="Tech Feasibility" />
           <span>Tech Feasibility</span>
       </a>
-      <a href="documents/designs.pdf" class="doc-item">
-          <img src="images/sketch.png" alt="Designs" />
-          <span>Designs</span>
+      <a href="documents/requirements_doc.pdf" class="doc-item">
+        <img src="images/requirement.png" alt="Requirements" />
+        <span>Requirements</span>
       </a>
-      <a href="documents/requirements.pdf" class="doc-item">
-          <img src="images/requirement.png" alt="Requirements" />
-          <span>Requirements</span>
+      <a href="documents/software_test_plan.pdf" class="doc-item">
+        <img src="images/planning.png" alt="Software Test Plan" />
+        <span>Software Test Plan</span>
+      </a>
+      <a href="documents/software_design_doc.pdf" class="doc-item">
+        <img src="images/design.png" alt="Software Design Document" />
+        <span>Software Design Document</span>
+      </a>
+      <a href="documents/communication_strategy_memo.pdf" class="doc-item">
+        <img src="images/communication.png" alt="Communication Strategy Memo" />
+        <span>Communication Strategy Memo</span>
+      </a>
+    </div>  
+  </div>
+
+  <div class="box">
+    <h2>Presentations</h2>
+    <div class="documents-container">
+      <a href="documents/design_review.pdf" class="doc-item">
+        <img src="images/sketch.png" alt="Designs" />
+        <span>Design Review 1</span>
+      </a>
+      <a href="documents/design_review_2.pdf" class="doc-item">
+        <img src="images/sketch.png" alt="Designs" />
+        <span>Design Review 2</span>
+      </a>
+      <a href="documents/design_review_3.pdf" class="doc-item">
+        <img src="images/sketch.png" alt="Designs" />
+        <span>Design Review 3</span>
+      </a>
+      <a href="documents/mini_intro.pdf" class="doc-item">
+          <img src="images/teaching.png" alt="Mini Intro" />
+          <span>Mini Intro</span>
+      </a>
+      <a href="documents/mini_update.pdf" class="doc-item">
+        <img src="images/teaching.png" alt="Mini Update" />
+        <span>Mini Update</span>
+      </a>
+    </div>  
+  </div>
+
+  <div class="box">
+    <h2>Team Videos</h2>
+    <div class="documents-container">
+      <a href="videos/mini_info.mp4" class="doc-item">
+        <img src="images/video_pic.png" alt="Mini Info" />
+        <span>Mini Info Video</span>
+      </a>
+      <a href="videos/prototype_demo.mp4" class="doc-item">
+        <img src="images/video_pic.png" alt="Prototype Demo" />
+        <span>Prototype Demo</span>
       </a>
     </div>  
   </div>
